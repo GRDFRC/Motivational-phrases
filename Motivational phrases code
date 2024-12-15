@@ -1,0 +1,130 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivational Quotes Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+            padding: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        .quote {
+            font-size: 1.5em;
+            margin: 20px 0;
+            color: #555;
+        }
+        .button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Motivational Quotes Generator</h1>
+    <p class="quote">Click the button to get inspired!</p>
+    <button class="button" onclick="generateQuote()">Inspire Me!</button>
+
+    <script>
+        const quotes = [
+            "It’s never too late to be what you might have been.",
+            "Success is the sum of small efforts repeated day in and day out.",
+            "Discipline will beat intelligence in the long run.",
+            "Believe in yourself, and anything is possible.",
+            "Every day is a new opportunity to grow.",
+            "Failure is the stepping stone to success.",
+            "Persistence is the key to success.",
+            "The only place success comes before work is in the dictionary.",
+            "Do something today that your future self will thank you for.",
+            "Don’t dream of success; work for it.",
+            "Action is the foundational key to all success.",
+            "Great achievements require great sacrifices.",
+            "If you can dream it, you can achieve it.",
+            "Strength doesn’t come from physical capacity. It comes from an indomitable will.",
+            "Courage doesn’t always roar. Sometimes it’s the quiet voice that says, ‘I’ll try again tomorrow.’",
+            "The perfect time to start was yesterday. The second best time is today.",
+            "Don’t be afraid to give up the good to go for the great.",
+            "Your limits exist only in your mind.",
+            "You are stronger than you think.",
+            "The future belongs to those who believe in the beauty of their dreams.",
+            "The only impossible thing is the one you don’t try.",
+            "Success is not the key to happiness. Happiness is the key to success.",
+            "Challenges are gifts that force us to find a new center of gravity.",
+            "Change begins the moment you decide to be yourself.",
+            "The difference between ordinary and extraordinary is that little extra.",
+            "You never know how strong you are until being strong is your only choice.",
+            "Happiness is not something ready-made. It comes from your own actions.",
+            "Don’t count the days; make the days count.",
+            "Every accomplishment starts with the decision to try.",
+            "Success is not measured by what you achieve but by the obstacles you overcome.",
+            "You are the creator of your own destiny.",
+            "Do the best you can until you know better. Then, when you know better, do better.",
+            "True motivation comes from within you.",
+            "The only limit to your impact is your imagination and commitment.",
+            "Believe you can, and you’re halfway there.",
+            "Your time is limited, so don’t waste it living someone else’s life.",
+            "The key to success is to start before you’re ready.",
+            "Success isn’t about always winning; it’s about never giving up.",
+            "Your attitude, not your aptitude, will determine your altitude.",
+            "If you stumble, make it part of the dance.",
+            "The first step doesn’t take you where you want to go, but it gets you out of where you are.",
+            "A journey of a thousand miles begins with a single step.",
+            "Be the change you wish to see in the world.",
+            "Failure is simply the opportunity to begin again, this time more intelligently.",
+            "Trust the process, even when you don’t understand the outcome.",
+            "Greatness is not a one-time act; it’s a habit.",
+            "Do more of what makes you happy.",
+            "Life is like riding a bicycle. To keep your balance, you must keep moving.",
+            "The harder you work, the luckier you get.",
+            "Don’t let what you can’t do interfere with what you can do.",
+            "The secret of getting ahead is getting started.",
+            "It always seems impossible until it’s done.",
+            "It’s not what you look at that matters; it’s what you see.",
+            "Every problem is an opportunity in disguise.",
+            "Follow your dreams, work harder than ever, and never give up.",
+            "Hard times often prepare ordinary people for an extraordinary destiny.",
+            "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+            "Talent wins games, but teamwork and intelligence win championships.",
+            "Optimism is the faith that leads to achievement.",
+            "Change your thoughts, and you’ll change your world.",
+            "Make each day your masterpiece.",
+            "Don’t wait. The time will never be just right.",
+            "Success is not the absence of failure; it’s the persistence through it.",
+            "The best way to predict the future is to create it.",
+            "Make the most of your present because it’s the only moment you’re guaranteed.",
+            "You have the power to make this day amazing.",
+            "Never let anyone dim your light.",
+            "Success doesn’t come to you; you go to it.",
+            "What you get by achieving your goals is not as important as what you become by achieving your goals.",
+            "Small daily improvements are the key to staggering long-term results.",
+            "Dream big, work hard, stay focused, and surround yourself with good people.",
+            "Learn from yesterday, live for today, and hope for tomorrow.",
+            "Don’t limit your challenges; challenge your limits.",
+            "One day, all your hard work will pay off.",
+            "The road to success is always under construction.",
+            "Believe in the power of yet: ‘I can’t do it yet.’",
+            "Success is waking up every day and doing what you love.",
+            "It’s not about being the best. It’s about being better than you were yesterday.",
+            "You don’t have to be perfect to be amazing.",
+            "Rise above the storm, and you’ll find the sunshine."
+        ];
+
+        function generateQuote() {
+            const index = Math.floor(Math.random() * quotes.length);
+            document.querySelector('.quote').innerText = quotes[index];
+        }
+    </script>
+</body>
+</html>
